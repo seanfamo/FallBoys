@@ -4,16 +4,22 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] float movementSpeed; //
-    [SerializeField] float rotationSpeed = 500;
+    [SerializeField] private float movementSpeed; //
+    [SerializeField] private float rotationSpeed = 500;
 
-    Touch _touch; //Asýl nokta sadece ileri hareket ederek karakterin nereye döneceðini belirlemek. 
+    public Animator animator;
 
-    Vector3 _touchDown; //ekrana dokunduðumda bir nokta alacaðým
-    Vector3 _touchUp; //býraktýðýmda farklý bir nokta alacaðým. Ardýndan çýkarma iþlemi yapacaðým böylece gideceðim yönün vektörünü elde edeceðim.
+    private Touch _touch; //Asýl nokta sadece ileri hareket ederek karakterin nereye döneceðini belirlemek. 
 
-    bool _dragStarted; //sürükleme baþlangýcýný kontrol edeceðim deðiþken
-    bool _isMoving; // karakterin hareket durumunu kontrol edeceðim deðiþken
+    private Vector3 _touchDown; //ekrana dokunduðumda bir nokta alacaðým
+    private Vector3 _touchUp; //býraktýðýmda farklý bir nokta alacaðým. Ardýndan çýkarma iþlemi yapacaðým böylece gideceðim yönün vektörünü elde edeceðim.
+
+    private bool _dragStarted; //sürükleme baþlangýcýný kontrol edeceðim deðiþken
+    private bool isMoving;
+    private void Start()
+    {
+        animator.GetComponent<Animator>();
+    }
 
     void Update()
     {
@@ -23,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
             if (_touch.phase==TouchPhase.Began) //dokunma iþlemi baþladýðý zaman
             {
                 _dragStarted = true; //dokunma baþladý bilgisini deðiþkenime gönderiyorum.
-                _isMoving = true;//animator'den bu deðiþkeni kullanacaðým için true'ya çekiyorum
+                animator.SetBool("isMoving", true);//animator'den bu deðiþkeni kullanacaðým için true'ya çekiyorum
                 _touchDown = _touch.position; 
                 _touchUp = _touch.position; // 2 pozisyonu da elde ettim
             }
@@ -37,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
             if (_touch.phase== TouchPhase.Ended)  
             {
                 _touchDown = _touch.position;  //bitiþ pozisyonumu aldým.
-                _isMoving = false;
+                animator.SetBool("isMoving", false);
                 _dragStarted = false; //iþlemlerin bittiðini deðiþkenlerime haber verdim.
             }
             gameObject.transform.rotation = Quaternion.RotateTowards(transform.rotation, CalculatingRotation(),rotationSpeed*Time.deltaTime);
