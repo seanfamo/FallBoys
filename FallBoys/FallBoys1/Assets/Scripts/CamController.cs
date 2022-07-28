@@ -6,7 +6,7 @@ public class CamController : MonoBehaviour
 {
     [SerializeField] Transform _target; //kameraya karakterimi hedef gösteriyorum
     [SerializeField] Vector3 _offset; // mesafe
-    [SerializeField] float _chasingSpeed = 5; //takip etme hýzý
+    [SerializeField] float _chasingSpeed = 2f; //takip etme hýzý
 
     private void Start()
     {
