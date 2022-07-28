@@ -123,30 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &445650933 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ed10391c8b5c2f44c9de0d12f05f824a, type: 3}
-  m_PrefabInstance: {fileID: 1579424991}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &445650934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 445650933}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14e5ae9af2d09ec4898cf6d19d897138, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 1
-  rotationSpeed: 350
---- !u!4 &445650936 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ed10391c8b5c2f44c9de0d12f05f824a, type: 3}
-  m_PrefabInstance: {fileID: 1579424991}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &898566443
 GameObject:
   m_ObjectHideFlags: 0
@@ -238,7 +214,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1031877043
 GameObject:
@@ -370,10 +346,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ebeb71969b4b894885b22292fe5b276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _target: {fileID: 445650936}
+  _target: {fileID: 0}
   _offset: {x: 0, y: 1.1, z: -3}
   _chasingSpeed: 0.8
---- !u!1001 &1579424991
+--- !u!1001 &1306918812
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -382,7 +358,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ed10391c8b5c2f44c9de0d12f05f824a, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ed10391c8b5c2f44c9de0d12f05f824a, type: 3}
       propertyPath: m_LocalScale.x
@@ -402,11 +378,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ed10391c8b5c2f44c9de0d12f05f824a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.0358
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ed10391c8b5c2f44c9de0d12f05f824a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6
+      value: -5.49
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ed10391c8b5c2f44c9de0d12f05f824a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -436,10 +412,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1060019560865440829, guid: ed10391c8b5c2f44c9de0d12f05f824a, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 8b9e8f3bb780dec46a9c0baf597074a9, type: 2}
     - target: {fileID: 919132149155446097, guid: ed10391c8b5c2f44c9de0d12f05f824a, type: 3}
       propertyPath: m_Name
       value: Boy
