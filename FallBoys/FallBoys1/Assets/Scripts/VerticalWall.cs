@@ -70,7 +70,7 @@ public class VerticalWall : MonoBehaviour
 	{
 		canChange = false;
 		yield return new WaitForSeconds(time);
-		int num = Random.Range(0, 1);
+		int num = Random.Range(0, 2);
 		//Debug.Log("2-"+num);
 		if (num == 1)
 			StartCoroutine(Retry(1.25f));
