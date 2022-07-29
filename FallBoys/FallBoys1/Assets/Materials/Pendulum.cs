@@ -9,17 +9,23 @@ public class Pendulum : MonoBehaviour
 	public bool randomStart = false; //If you want to modify the start position
 	private float random = 0;
 
-	// Start is called before the first frame update
 	void Awake()
     {
 		if(randomStart)
 			random = Random.Range(0f, 1f);
 	}
 
-    // Update is called once per frame
     void Update()
     {
 		float angle = limit * Mathf.Sin(Time.time + random * speed);
 		transform.localRotation = Quaternion.Euler(0, 0, angle);
+	}
+
+	[SerializeField] private Transform _player;
+	[SerializeField] private Transform _spawnPoint;
+
+	private void OnTriggerEnter(Collider other)
+	{
+		_player.transform.position = _spawnPoint.transform.position;
 	}
 }
