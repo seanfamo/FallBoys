@@ -173,6 +173,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pendulum
       objectReference: {fileID: 0}
+    - target: {fileID: 5263193850122822931, guid: 72c72b56d6b74c54a853b948afc12b86, type: 3}
+      propertyPath: m_TagString
+      value: Respawn
+      objectReference: {fileID: 0}
     - target: {fileID: 5263193850122822932, guid: 72c72b56d6b74c54a853b948afc12b86, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -365,10 +369,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.05
+  m_Radius: 0.079255864
   m_Height: 0.25618502
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: -0.0053692344, y: 0, z: -0.0060596466}
 --- !u!95 &64078655
 Animator:
   serializedVersion: 3
@@ -397,8 +401,8 @@ NavMeshObstacle:
   m_GameObject: {fileID: 64078648}
   m_Enabled: 1
   serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.06, y: 0.128, z: 0.03}
+  m_Shape: 0
+  m_Extents: {x: 0.01, y: 0.085, z: 0.01}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 0
@@ -497,9 +501,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pendulum (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5263193850122822931, guid: 72c72b56d6b74c54a853b948afc12b86, type: 3}
+      propertyPath: m_TagString
+      value: Respawn
+      objectReference: {fileID: 0}
     - target: {fileID: 5263193850122822932, guid: 72c72b56d6b74c54a853b948afc12b86, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 5263193850122822932, guid: 72c72b56d6b74c54a853b948afc12b86, type: 3}
       propertyPath: m_LocalScale.x
@@ -761,6 +769,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f66af6d83f4a8944daec2cf5ddc8e0fc, type: 3}
       propertyPath: m_Name
       value: HorizontalObstacle (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f66af6d83f4a8944daec2cf5ddc8e0fc, type: 3}
+      propertyPath: m_TagString
+      value: Respawn
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f66af6d83f4a8944daec2cf5ddc8e0fc, type: 3}
@@ -1087,10 +1099,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.05
+  m_Radius: 0.079255864
   m_Height: 0.25618502
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: -0.0053692344, y: 0, z: -0.0060596466}
 --- !u!95 &394305021
 Animator:
   serializedVersion: 3
@@ -1119,8 +1131,8 @@ NavMeshObstacle:
   m_GameObject: {fileID: 394305014}
   m_Enabled: 1
   serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.06, y: 0.128, z: 0.03}
+  m_Shape: 0
+  m_Extents: {x: 0.01, y: 0.128, z: 0.01}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 0
@@ -1411,6 +1423,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HorizontalObstacle (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f66af6d83f4a8944daec2cf5ddc8e0fc, type: 3}
+      propertyPath: m_TagString
+      value: Respawn
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f66af6d83f4a8944daec2cf5ddc8e0fc, type: 3}
 --- !u!1 &426041954 stripped
@@ -1536,7 +1552,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 3d328e0f3eeb14c40be1a242268e59b9, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3d328e0f3eeb14c40be1a242268e59b9, type: 3}
       propertyPath: m_LocalScale.x
@@ -1613,7 +1629,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 3d328e0f3eeb14c40be1a242268e59b9, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3d328e0f3eeb14c40be1a242268e59b9, type: 3}
       propertyPath: m_LocalScale.x
@@ -2885,6 +2901,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Girl
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0c08036e99be9e14dacb2f304b390e17, type: 3}
+      propertyPath: m_TagString
+      value: Opponent
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c08036e99be9e14dacb2f304b390e17, type: 3}
 --- !u!1 &860876563
@@ -3923,7 +3943,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f6efaee4545b0a14e97edd694dd613be, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f6efaee4545b0a14e97edd694dd613be, type: 3}
       propertyPath: m_LocalScale.x
@@ -5125,7 +5145,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f6efaee4545b0a14e97edd694dd613be, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f6efaee4545b0a14e97edd694dd613be, type: 3}
       propertyPath: m_LocalScale.x
@@ -5321,6 +5341,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f66af6d83f4a8944daec2cf5ddc8e0fc, type: 3}
       propertyPath: m_Name
       value: HorizontalObstacle (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f66af6d83f4a8944daec2cf5ddc8e0fc, type: 3}
+      propertyPath: m_TagString
+      value: Respawn
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f66af6d83f4a8944daec2cf5ddc8e0fc, type: 3}
@@ -6500,7 +6524,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f66af6d83f4a8944daec2cf5ddc8e0fc, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f66af6d83f4a8944daec2cf5ddc8e0fc, type: 3}
       propertyPath: m_LocalScale.x
@@ -6562,6 +6586,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HorizontalObstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f66af6d83f4a8944daec2cf5ddc8e0fc, type: 3}
+      propertyPath: m_TagString
+      value: Respawn
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f66af6d83f4a8944daec2cf5ddc8e0fc, type: 3}
 --- !u!1001 &1840066146
@@ -6595,9 +6623,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pendulum (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5263193850122822931, guid: 72c72b56d6b74c54a853b948afc12b86, type: 3}
+      propertyPath: m_TagString
+      value: Respawn
+      objectReference: {fileID: 0}
     - target: {fileID: 5263193850122822932, guid: 72c72b56d6b74c54a853b948afc12b86, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 5263193850122822932, guid: 72c72b56d6b74c54a853b948afc12b86, type: 3}
       propertyPath: m_LocalScale.x
@@ -6948,10 +6980,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.05
+  m_Radius: 0.079255864
   m_Height: 0.25618502
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: -0.0053692344, y: 0, z: -0.0060596466}
 --- !u!95 &1911994439
 Animator:
   serializedVersion: 3
@@ -6980,8 +7012,8 @@ NavMeshObstacle:
   m_GameObject: {fileID: 1911994432}
   m_Enabled: 1
   serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.06, y: 0.128, z: 0.03}
+  m_Shape: 0
+  m_Extents: {x: 0.01, y: 0.128, z: 0.01}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 0
@@ -7424,10 +7456,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.05
+  m_Radius: 0.079255864
   m_Height: 0.25618502
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: -0.0053692344, y: 0, z: -0.0060596466}
 --- !u!95 &2097453232
 Animator:
   serializedVersion: 3
@@ -7456,8 +7488,8 @@ NavMeshObstacle:
   m_GameObject: {fileID: 2097453225}
   m_Enabled: 1
   serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.06, y: 0.128, z: 0.03}
+  m_Shape: 0
+  m_Extents: {x: 0.01, y: 0.128, z: 0.01}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 0
